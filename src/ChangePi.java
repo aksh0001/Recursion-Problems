@@ -24,7 +24,7 @@ public class ChangePi {
         // RC1: if last two chars is "pi", recurse on rest and concat with "3.14:
         if (s.substring(n - 1, n + 1).equals("pi"))
             return changePi(s, n - 2) + "3.14";
-            // RC2: if last two chars not "pi", recurse on rest and keep current
+            // RC2: if last two chars not "pi", recurse on rest and concat with (keep) current
         else
             return changePi(s, n - 1) + s.charAt(n);
     }
