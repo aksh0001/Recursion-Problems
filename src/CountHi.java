@@ -23,7 +23,7 @@ public class CountHi {
             return 0;
         // RC1: if last 2 chars is "hi", add 1 and recurse
         if (s.substring(n - 1, n + 1).equals("hi"))
-            return 1 + countHi(s, n - 1);
+            return 1 + countHi(s, n - 2);
             // RC2: if last two not "hi" simply recurse
         else
             return countHi(s, n - 1);
