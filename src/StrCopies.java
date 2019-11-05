@@ -18,7 +18,7 @@ public class StrCopies {
     }
 
     static boolean strCopies(String s, String sub, int k, int n, int m) {
-        //BC1: If k = 0, by definition atleast 0 copies appear
+        //BC1: If k = 0, by definition atleast 0 copies appear (N.B. this BC needs to come first since this statement takes precedence over length mismatches)
         if (k == 0)
             return true;
         //BC2: If len < sub len, cannot match
